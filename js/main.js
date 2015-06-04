@@ -37,7 +37,7 @@ function expect(target) {
 // Only add code to *THIS* section!
 
 var Dog = function(obj1){
-  var doggieObj = obj1 || {};
+  var doggieObj = obj1 || {}; //testing if input is object; otherwise create empty object
   this.color = doggieObj.color;
   this.status = 'normal';
   this.hungry = (doggieObj.hungry !== undefined) ? doggieObj.hungry : true;
@@ -45,7 +45,7 @@ var Dog = function(obj1){
 };
 
 var Human = function(obj2){
-  var personObj = obj2 || {};
+  var personObj = obj2 || {}; //testing if input is object; otherwise create empty object
   this.pet = function(doggie){
     doggie.status = 'happy';
   };
